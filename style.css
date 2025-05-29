@@ -1,15 +1,14 @@
+/* Apply border-box sizing to all elements on page */
 html {
     box-sizing: border-box;
 }
 
+/* Ensure all elements adhere to border-box sizing */
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-/* * {
-    border: 2px red solid;
-} */
-
+/* Apply Flexbox column to entire page, set font types, and set margin */
 body {
     display: flex;
     flex-direction: column;
@@ -17,6 +16,7 @@ body {
     margin: 0;
 }
 
+/* Create unordered list for links in header and arrange them in upper right page corner */
 ul {
     list-style-type: none;
     display: flex;
@@ -25,45 +25,52 @@ ul {
     justify-content: flex-end;
 }
 
+/* Style the header links */
 li {
     margin: 8px;
     color: #e5e7eb;
     font-size: 18px;
 }
 
+/* Add "sign-up" button to header */
 .header-button {
     width: 90px;
     background-color: #3882f6;
     color: #f9faf8;
     border-radius: 5px;
     font-weight: 900;
-    font-size: 10px;
+    font-size: 16px;
     padding: 6px;
     border-style: none;
 }
 
+/* Style flex header's container */
 .header {
     display: flex;
     background-color: #1f2937;
     padding: 0 150px 50px 150px;
 }
 
+/* Add padding to outer sides of header elements */
 .header-left, .header-right {
     padding: 10px;
 }
 
+/* Position left-side header elements */
 .header-left {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
+/* Position right-side header elements */
 .header-right {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
+/* Style "Header Logo" text in top left corner of page */
 .logo-text {
     padding: 0;
     margin: 0;
@@ -72,21 +79,25 @@ li {
     padding-bottom: 50px;
 }
 
+/* Style both text blocks on the left-side of the header section */
 .header-primary, .header-secondary {
     margin: 0;
     color: #e5e7eb;
 }
 
+/* Style "This website is awesome" text in header */
 .header-primary {
     font-size: 48px;
     font-weight: 900;
 }
 
+/* Style the secondary text in the header, located under "This website is awesome" */
 .header-secondary {
     font-size: 18px;
     padding-bottom: 5px;
 }
 
+/* Add styling inside header to image placeholder, where actual image can later be added */
 .placeholder {
     background-color: #a9a9a9;
     color: #ffffff;
@@ -94,10 +105,11 @@ li {
     width: 400px;
     text-align: center;
     line-height: 150px;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: auto;
 }
 
+/* Style second "random info" subsection on page */
 .info-text {
     display: flex;
     color: #1f2937;
@@ -107,32 +119,37 @@ li {
     padding: 8px 0;
 }
 
+/* Create container for image placeholders in "random info" section */
 .image-holders {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
+/* Create container for image captions in "random info" section */
 .image-captions {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 60px;
 }
 
+/* Style image placeholders, where actual image can later be added */
 .one {
     border: 2px #3882f6 solid;
-    width: 100px;
+    width: 125px;
     height: 100px;
     border-radius: 5px;
-    margin: 0 20px;
+    
 }
 
+/* Add caption text below images */
 .caption { 
     color: #1f2937;
-    font-size: 12px;
-    padding: 5px 15px;
+    font-size: 14px;
+    padding-top: 5px;
 }
 
+/* Create container for third section of the page with quoted text */
 .text-block {
     display: flex;
     flex-direction: column;
@@ -141,6 +158,7 @@ li {
     margin-bottom: 75px;
 }
 
+/* Style the quoted text */
 .quote {
     color: #1f2937;
     font-size: 36px;
@@ -150,6 +168,7 @@ li {
     margin: 0;
 }
 
+/* Add placeholder Thor signature to quoted text */
 .signoff {
     font-size: 18px;
     font-weight: 900;
@@ -159,6 +178,7 @@ li {
     margin: 0;
 }
 
+/* Create container for footer */
 .footer {
     display: flex;
     justify-content: space-evenly;
@@ -170,33 +190,38 @@ li {
     margin: 0 auto;
 }
 
+/* Add containers for both footer text blocks */
 .footer-primary, .footer-secondary {
     padding: 0;
     margin: 0;
 }
 
+/* Style first line of footer text */
 .footer-primary {
     color: #f9faf8;
     font-weight: 900;
     font-size: 18px;
 }
 
+/* Style second line of footer text */
 .footer-secondary {
     color: #e5e7eb;
     font-size: 14px;
 }
 
+/* Style footer "Sign up" button */
 .footer-button {
     width: 90px;
     background-color: #3882f6;
     color: #f9faf8;
     border-radius: 5px;
     font-weight: 900;
-    font-size: 10px;
+    font-size: 16px;
     padding: 6px;
     border: 2px #f9faf8 solid;  
 }
 
+/* Add a copyright note at the bottom of the page */
 .copyright {
     margin-top: 80px;
     display: flex;
