@@ -128,3 +128,29 @@ button {
     font-size: 12px;
     padding: 5px 15px;
 }
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    padding: 60px 0;
+}
+
+.quote {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.signoff {
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    margin: 0;
+    
+}
